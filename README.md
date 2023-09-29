@@ -1,4 +1,4 @@
-# alarm_app
+# Bookly_app
 
 A new Flutter project.
 
