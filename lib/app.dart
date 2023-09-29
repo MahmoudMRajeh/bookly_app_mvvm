@@ -1,15 +1,18 @@
+import 'package:alarm_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'features/splash/presentation/view/splash_view.dart';
 
 class BooklyApp extends StatelessWidget {
   const BooklyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashView(),
+      home: const SplashView(),
+      theme: ThemeData().copyWith(
+        scaffoldBackgroundColor: AppColors.primaryColor,
+      ),
     );
   }
 }
