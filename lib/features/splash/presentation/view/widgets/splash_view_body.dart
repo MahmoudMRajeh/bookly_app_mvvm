@@ -1,5 +1,5 @@
 import 'package:alarm_app/core/constants/constants.dart';
-import 'package:alarm_app/core/utils/app_images.dart';
+import 'package:alarm_app/core/utils/app_assets.dart';
 import 'package:alarm_app/features/home/presentaion/veiws/home_view.dart';
 import 'package:alarm_app/features/splash/presentation/view/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +34,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Image.asset(AppImages.appLogo),
+        Image.asset(AppAssets.appLogoImage),
         const SizedBox(
           height: 10,
         ),
