@@ -1,6 +1,10 @@
+import 'package:alarm_app/core/constants/constants.dart';
 import 'package:alarm_app/core/utils/app_images.dart';
+import 'package:alarm_app/features/home/presentaion/veiws/home_view.dart';
 import 'package:alarm_app/features/splash/presentation/view/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -17,14 +21,13 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void initState() {
     super.initState();
     initSlidingAnimation();
+    navigateToHome();
   }
-
   @override
   void dispose() {
     super.dispose();
     animationController.dispose();
   }
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -39,7 +42,18 @@ class _SplashViewBodyState extends State<SplashViewBody>
       ],
     );
   }
-
+  void navigateToHome() {
+    Future.delayed(
+      const Duration(seconds: 3),
+      () {
+        Get.to(
+          () => const HomeView(),
+          transition: Transition.fadeIn,
+          duration: kTranstionDuration,
+        );
+      },
+    );
+  }
   void initSlidingAnimation() {
     animationController = AnimationController(
       vsync: this,
