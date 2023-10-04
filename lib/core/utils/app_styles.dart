@@ -1,9 +1,26 @@
+import 'package:alarm_app/core/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 abstract class Styles {
-  static const titleMedium = TextStyle(
+  static const txtStyle14 = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.normal,
+  );
+  static const txtStyle16 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+  ) ;
+  static const txtStyle18 = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+  );
+  static const txtStyle20 = TextStyle(
     fontSize: 20,
-    fontWeight: FontWeight.w700,
-    
+    fontWeight: FontWeight.normal,
+  );
+  static const txtStyle30 = TextStyle(
+    fontSize: 30,
+    fontWeight: FontWeight.w600,
+    fontFamily: kGtSectraRegular,
   );
 }

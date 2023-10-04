@@ -32,10 +32,10 @@ flutter:
     - assets/images/
     - assets/images/cr7.jpg
 
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: GT Sectra Regular
+      fonts:
+        - asset: assets/fonts/GT Sectra Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
