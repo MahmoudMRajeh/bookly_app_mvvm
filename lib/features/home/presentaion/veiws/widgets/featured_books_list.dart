@@ -11,6 +11,7 @@ class FeaturedBooksListView extends StatelessWidget {
     return SizedBox(
 height: context.height * .29,
       child: ListView.builder(
+        itemCount: 10,
         scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
           return const Padding(
