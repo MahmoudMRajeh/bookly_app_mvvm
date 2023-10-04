@@ -1,5 +1,4 @@
 import 'package:alarm_app/core/utils/app_styles.dart';
-import 'package:alarm_app/features/home/presentaion/veiws/widgets/best_seller_book_item.dart';
 import 'package:alarm_app/features/home/presentaion/veiws/widgets/best_seller_list_view.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/widgets/custom_appbar.dart';
