@@ -1,7 +1,5 @@
 import 'package:alarm_app/config/routes.dart';
-import 'package:alarm_app/core/constants/constants.dart';
 import 'package:alarm_app/core/utils/app_assets.dart';
-import 'package:alarm_app/features/home/presentaion/veiws/home_view.dart';
 import 'package:alarm_app/features/splash/presentation/view/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
