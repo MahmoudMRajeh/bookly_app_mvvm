@@ -1,16 +1,15 @@
+import 'package:alarm_app/config/routes.dart';
 import 'package:alarm_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'features/splash/presentation/view/splash_view.dart';
 
 class BooklyApp extends StatelessWidget {
   const BooklyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp.router(
+      routerConfig: AppRoutes.router,
       debugShowCheckedModeBanner: false,
-      home: const SplashView(),
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: AppColors.primaryColor,
         textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
@@ -18,3 +17,4 @@ class BooklyApp extends StatelessWidget {
     );
   }
 }
+

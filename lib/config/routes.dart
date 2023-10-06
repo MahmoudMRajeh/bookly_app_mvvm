@@ -1,0 +1,30 @@
+import 'package:alarm_app/features/home/presentaion/veiws/book_details_view.dart';
+import 'package:alarm_app/features/home/presentaion/veiws/home_view.dart';
+import 'package:alarm_app/features/splash/presentation/view/splash_view.dart';
+import 'package:go_router/go_router.dart';
+
+abstract class AppRoutes {
+  static final router = GoRouter(
+    routes: [
+      GoRoute(
+        path: Routes.splashRoute,
+        builder: (context, state) => const SplashView(),
+      ),
+      GoRoute(
+        path: Routes.homeRotue,
+        builder: (context, state) => const HomeView(),
+      ),
+      GoRoute(
+        path: Routes.bookDetailsRoute,
+        builder: (context, state) => const BookDetailsView(),
+      ),
+    ],
+  );
+}
+
+abstract class Routes {
+  static const String splashRoute = '/';
+  static const String homeRotue = '/HomeRoute';
+  static const String bookDetailsRoute = '/BookDetailsRoute';
+
+}
