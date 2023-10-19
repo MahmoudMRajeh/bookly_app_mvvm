@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-
 import '../../../../../core/utils/app_assets.dart';
 
-class CustomFeaturedItem extends StatelessWidget {
-  const CustomFeaturedItem({super.key});
+class CustomBookImage extends StatelessWidget {
+  const CustomBookImage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 2.6/4,
+      aspectRatio: 2.5/4,
       child: Container(
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(
