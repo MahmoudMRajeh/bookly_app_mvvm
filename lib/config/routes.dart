@@ -1,5 +1,6 @@
 import 'package:alarm_app/features/home/presentaion/veiws/book_details_view.dart';
 import 'package:alarm_app/features/home/presentaion/veiws/home_view.dart';
+import 'package:alarm_app/features/search/presentation/views/search_view.dart';
 import 'package:alarm_app/features/splash/presentation/view/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
@@ -18,6 +19,10 @@ abstract class AppRoutes {
         path: Routes.bookDetailsRoute,
         builder: (context, state) => const BookDetailsView(),
       ),
+      GoRoute(
+        path: Routes.searchRoute,
+        builder: (context, state) => const SearchView(),
+      ),
     ],
   );
 }
@@ -26,5 +31,5 @@ abstract class Routes {
   static const String splashRoute = '/';
   static const String homeRotue = '/HomeRoute';
   static const String bookDetailsRoute = '/BookDetailsRoute';
-
+  static const String searchRoute='/SearchRoute';
 }

@@ -7,8 +7,8 @@ import 'package:alarm_app/features/home/presentaion/veiws/widgets/rating_widget.
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class BestSellerBookItem extends StatelessWidget {
-  const BestSellerBookItem({super.key});
+class BookListViewItem extends StatelessWidget {
+  const BookListViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {

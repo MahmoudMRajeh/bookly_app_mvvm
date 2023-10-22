@@ -1,5 +1,7 @@
+import 'package:alarm_app/config/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
 
 import '../app_assets.dart';
 
@@ -12,7 +14,6 @@ class CustomAppBar extends StatelessWidget {
       padding:
           const EdgeInsets.only( top: 60, bottom: 16),
       child: Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Image.asset(
             AppAssets.appLogoImage,
@@ -21,7 +22,9 @@ class CustomAppBar extends StatelessWidget {
           ),
           const Spacer(),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              GoRouter.of(context).push(Routes.searchRoute);
+            },
             icon: const Icon(
               FontAwesomeIcons.magnifyingGlass,
               size: 26,
