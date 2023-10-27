@@ -17,14 +17,14 @@ class BookDetailsViewBody extends StatelessWidget {
         SliverFillRemaining(
           hasScrollBody: false,
           child: Padding(
-            padding:  EdgeInsets.symmetric(horizontal: 30.0),
+            padding: EdgeInsets.symmetric(horizontal: 30.0),
             child: Column(
               children: [
-                 SafeArea(
+                SafeArea(
                   child: BookDetailsAppBar(),
                 ),
-                 BooksDetailsSection(),
-                 Expanded(
+                BooksDetailsSection(),
+                Expanded(
                   child: SizedBox(
                     height: 50,
                   ),

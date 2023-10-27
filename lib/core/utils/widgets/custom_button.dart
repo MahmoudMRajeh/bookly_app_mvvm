@@ -7,12 +7,13 @@ class CustomButton extends StatelessWidget {
       required this.backgroundColor,
       required this.txtColor,
       this.borderRadius,
-      required this.txt, this.fontSize});
+      required this.txt,
+      this.fontSize});
   final Color backgroundColor;
   final Color txtColor;
   final BorderRadius? borderRadius;
   final String txt;
-  final double?fontSize;
+  final double? fontSize;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -28,10 +29,7 @@ class CustomButton extends StatelessWidget {
         child: Text(
           txt,
           style: Styles.txtStyle18.copyWith(
-            fontWeight: FontWeight.w900,
-            color: txtColor,
-            fontSize: fontSize
-          ),
+              fontWeight: FontWeight.w900, color: txtColor, fontSize: fontSize),
         ),
       ),
     );

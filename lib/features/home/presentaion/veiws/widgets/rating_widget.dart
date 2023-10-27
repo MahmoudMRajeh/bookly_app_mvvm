@@ -19,11 +19,9 @@ class RatingWidget extends StatelessWidget {
         const SizedBox(
           width: 7.3,
         ),
-         Text(
+        Text(
           "4.8",
-          style: Styles.txtStyle16.copyWith(
-            fontWeight: FontWeight.w600
-          ),
+          style: Styles.txtStyle16.copyWith(fontWeight: FontWeight.w600),
         ),
         const SizedBox(
           width: 5,

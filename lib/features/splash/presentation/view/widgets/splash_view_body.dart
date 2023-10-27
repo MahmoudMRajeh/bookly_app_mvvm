@@ -3,6 +3,7 @@ import 'package:alarm_app/core/utils/app_assets.dart';
 import 'package:alarm_app/features/splash/presentation/view/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
 
@@ -20,11 +21,13 @@ class _SplashViewBodyState extends State<SplashViewBody>
     initSlidingAnimation();
     navigateToHome();
   }
+
   @override
   void dispose() {
     super.dispose();
     animationController.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -39,6 +42,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       ],
     );
   }
+
   void navigateToHome() {
     Future.delayed(
       const Duration(seconds: 3),
@@ -48,10 +52,13 @@ class _SplashViewBodyState extends State<SplashViewBody>
         //   transition: Transition.fadeIn,
         //   duration: kTranstionDuration,
         // );
-        GoRouter.of(context).push(Routes.homeRotue,);
+        GoRouter.of(context).push(
+          Routes.homeRotue,
+        );
       },
     );
   }
+
   void initSlidingAnimation() {
     animationController = AnimationController(
       vsync: this,

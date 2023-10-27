@@ -13,8 +13,8 @@ class SimillerBooksListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
           return const Padding(
-            padding:  EdgeInsets.symmetric(horizontal:5.0),
-            child:  CustomBookImage(),
+            padding: EdgeInsets.symmetric(horizontal: 5.0),
+            child: CustomBookImage(),
           );
         },
       ),

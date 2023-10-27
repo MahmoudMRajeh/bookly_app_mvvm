@@ -31,5 +31,5 @@ abstract class Routes {
   static const String splashRoute = '/';
   static const String homeRotue = '/HomeRoute';
   static const String bookDetailsRoute = '/BookDetailsRoute';
-  static const String searchRoute='/SearchRoute';
+  static const String searchRoute = '/SearchRoute';
 }

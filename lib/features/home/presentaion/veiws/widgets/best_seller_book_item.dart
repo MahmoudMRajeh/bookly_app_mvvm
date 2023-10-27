@@ -48,8 +48,8 @@ class BookListViewItem extends StatelessWidget {
                     width: context.width * .4,
                     child: Text(
                       "Harry Potter and the Goblet of Fire",
-                      style:
-                          Styles.txtStyle20.copyWith(fontFamily: kGtSectraRegular),
+                      style: Styles.txtStyle20
+                          .copyWith(fontFamily: kGtSectraRegular),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
@@ -90,4 +90,3 @@ class BookListViewItem extends StatelessWidget {
     );
   }
 }
-

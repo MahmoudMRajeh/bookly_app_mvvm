@@ -24,7 +24,7 @@ class BooksAction extends StatelessWidget {
           Expanded(
             child: CustomButton(
               txtColor: Colors.white,
-              fontSize:16,
+              fontSize: 16,
               txt: "Free Review",
               backgroundColor: Color(0xffEF8262),
               borderRadius: BorderRadius.only(
