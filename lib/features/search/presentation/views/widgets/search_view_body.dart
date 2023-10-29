@@ -1,6 +1,4 @@
 import 'package:alarm_app/core/utils/app_styles.dart';
-import 'package:alarm_app/features/home/presentaion/veiws/widgets/best_seller_list_view.dart';
-import 'package:alarm_app/features/home/presentaion/veiws/widgets/featured_books_list.dart';
 import 'package:alarm_app/features/search/presentation/views/widgets/custom_search_text_feild_.dart';
 import 'package:alarm_app/features/search/presentation/views/widgets/search_result_list_view.dart';
 import 'package:flutter/material.dart';
