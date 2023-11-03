@@ -19,10 +19,10 @@ class HomeRepositoryImpl implements HomeRepository {
               "volumes?Filtering=free-ebooks&q=subject:programming&sorting=newest");
       List<BookModel> books = [];
       for (var i in data["items"]) {
-        books.add(BookModel.fromJson(i));
+        books.add(BookModel.fromMap(i));
       }
       return Right(books);
-    } on Exception catch (error) {
+    }catch (error) {
       if (error is DioException) {
         return Left(ServerFailure.fromDioError(error));
       }
@@ -40,10 +40,10 @@ class HomeRepositoryImpl implements HomeRepository {
               "volumes?Filtering=free-ebooks&q=subject:programming");
       List<BookModel> books = [];
       for (var i in data["items"]) {
-        books.add(BookModel.fromJson(i));
+        books.add(BookModel.fromMap(i));
       }
       return Right(books);
-    } on Exception catch (error) {
+    } catch (error) {
       if (error is DioException) {
         return Left(ServerFailure.fromDioError(error));
       }
@@ -51,5 +51,6 @@ class HomeRepositoryImpl implements HomeRepository {
       return const Left(
           ServerFailure(errMsg: "Opps There was an Error, Please try again !"));
     }
+    
   }
 }
